@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="home.css">
+        <script>
+            //darkmode function
+            function darkorlightmode() {
+            if (document.getElementById("darkmode").checked) {
+                document.body.style.backgroundColor = "black";
+                document.body.style.color = "white";
+                document.getElementById("navigation").style.backgroundColor = "darkgray";
+                document.getElementById("main").style.backgroundColor = "darkgray";
+                document.getElementById("modebox").style.backgroundColor = "darkgray";
+                }
+            else { (document.getElementById("lightmode").checked) 
+                document.body.style.backgroundColor = "white";
+                document.body.style.color = "black";
+                document.getElementById("navigation").style.backgroundColor = "lightgray";
+                document.getElementById("main").style.backgroundColor = "lightgray";
+                document.getElementById("modebox").style.backgroundColor = "lightgray";
+            }
+            }
+
+        </script>
+    </head>
+    <body>
+        <div id="modebox">
+        <!-- Light/Dark Mode Toggle-->
+        <input type="radio" id="lightmode" onclick="darkorlightmode()" name="lightordark" checked>
+        <label for="lightmode">Lightmode</label>
+        <input type="radio" id="darkmode" onclick="darkorlightmode()" name="lightordark">
+        <label for="darkmode">Darkmode</label>
+        </div>
+
+        <br><br>
+
+        <h1>Jeffrey Smith</h1>
+        <h3>IT 130</h3>
+
+        <!-- Navigation Bar -->
+        <div id="navigation">
+        <aside id="home">
+            <a href="home.html">
+            Home
+        </a>
+        </aside>
+        <aside id="aboutme">
+            <a href="aboutme.html">
+            About Me / Resume
+        </a>
+        </aside>
+        <aside id="twitter">
+            <a href="twitter.html">
+            Twitter Work
+        </a>
+        </aside>
+        <aside id="cshofwork">
+            <a href="cshofwork.html">
+            Chicagoland Sports Hall of Fame Work
+        </a>
+        </aside>
+        <aside id="fenwick">
+            <a href="fenwick.html">
+            Fenwick Broadcasting
+        </a>
+        </aside>
+        
+        </div>
+
+        <div id="main">
+            <h2>Home</h2>
+            <p>Hello and welcome to my final project. I built this website based on computer graphic and 3D animation work I have done in the past. </p>
+            <aside id="left">
+                <img src="drake_ye1.gif" alt="Drake and Ye" id="left">
+                <div id="left">
+                    <p>Here is a gif animation I made for a commision from a request on Fiverr. It is a simple gif that was made using Adobe After Effects. I first masked out the baskground and then use a solid black background. From there I added a 4 color gradient effect and animated it. </p>
+
+                    </div>
+            </aside>
+            <aside id="middle">
+                <img src="cemetery.jpg" alt="cemetery">
+                <div id="middle">
+                    <p> Here is a image I made for a class at DePaul. We were assigned to draw or make a model of a gravestone we saw at one of the cemeteries we visted. I made this Cinema4D. It was based off a memorial gravestone for those who lost their lives and helped out during the events of 9/11.</p>
+            </aside>
+            <aside id="right">
+                <img src="donda3.png" alt="album cover">
+                <div id="right">
+                    <p>Here is a mockup album cover I made for a friend who needed one at the time. He gave me suggestions of what he wanted to see. This was made in Adobe Photoshop.</p>
+                </div>
+            </aside>
+        </div>
+
+        <br><br><br>
+
+        
+        
+
+
+        
+        
+        
+
+
+
+    </body>
+</html>
